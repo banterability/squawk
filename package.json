@@ -1,6 +1,7 @@
 {
   "name": "squawk",
   "version": "0.1.0",
+  "description": "Read out complex strings in a vaguely understandable way",
   "author": "Jeff Long",
   "license": "MIT",
   "repository": {
