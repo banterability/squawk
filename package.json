@@ -1,4 +1,14 @@
 {
   "name": "squawk",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "author": "Jeff Long",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/banterability/squawk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banterability/squawk/issues"
+  },
+  "homepage": "https://github.com/banterability/squawk"
 }
