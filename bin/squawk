@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var squawk = require('../index');
+
+console.log(squawk(process.argv[2]));
