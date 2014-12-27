@@ -15,5 +15,12 @@
     "assertive": "^1.4.1",
     "coffee-script": "^1.8.0",
     "mocha": "^2.1.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
