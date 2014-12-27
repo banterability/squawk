@@ -10,4 +10,9 @@ describe('squawk', function(){
     var expected = 'h\ne\nl\nl\no';
     assert.equal(expected, squawk('hello'));
   });
+
+  it('replaces numbers with their word form', function(){
+    var expected = "a\ntwo\nc\nfour";
+    assert.equal(expected, squawk('a2c4'));
+  });
 });
