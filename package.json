@@ -22,5 +22,8 @@
   },
   "scripts": {
     "test": "mocha"
+  },
+  "bin": {
+    "squawk": "./bin/squawk"
   }
 }
