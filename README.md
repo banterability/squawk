@@ -18,13 +18,14 @@ $ npm install -g squawk
 Usage:
 
 ```bash
-$ squawk abc123
-alpha
-bravo
-charlie
+$ squawk THX1138
+tango
+hotel
+x-ray
 one
-two
+one
 three
+eight
 ```
 
 #### From Node.js
@@ -39,6 +40,6 @@ Usage:
 
 ```javascript
 var squawk = require('squawk');
-squawk('1a3');
-# -> ['one', 'alpha', 'three']
+squawk('a113');
+// -> ['alpha', 'one', 'one', 'three']
 ```
