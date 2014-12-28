@@ -17,5 +17,5 @@ module.exports = function(input){
   var inputChars = input.toString().split('');
   return inputChars.map(function(ch){
     return processCharacter(ch);
-  }).join('\n');
+  });
 };
