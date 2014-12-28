@@ -40,5 +40,5 @@ Usage:
 ```javascript
 var squawk = require('squawk');
 console.log(squawk('1a3'));
-# -> one\nalpha\nthree
+# -> ['one', 'alpha', 'three']
 ```
