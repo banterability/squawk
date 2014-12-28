@@ -19,9 +19,9 @@ Usage:
 
 ```bash
 $ squawk abc123
-a
-b
-c
+alpha
+bravo
+charlie
 one
 two
 three
@@ -39,6 +39,6 @@ Usage:
 
 ```javascript
 var squawk = require('squawk');
-console.log(squawk('123'));
-# -> one\ntwo\nthree
+console.log(squawk('1a3'));
+# -> one\nalpha\nthree
 ```
