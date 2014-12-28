@@ -1,11 +1,14 @@
-var processNumbers = require('./lib/numbers');
-
+var processNumbers = require('./lib/numbers'),
+    processLetters = require('./lib/letters');
 
 function processCharacter(ch){
-  var numberReplacement;
+  var numberReplacement, letterReplacement;
 
   if(numberReplacement = processNumbers(ch)){
     return numberReplacement;
+  }
+  if(letterReplacement = processLetters(ch)){
+    return letterReplacement;
   }
   return ch;
 }

@@ -15,4 +15,9 @@ describe('squawk', function(){
     var expected = "two\nfour";
     assert.equal(expected, squawk('24'));
   });
+
+  it('replaces letters with their word form', function(){
+    var expected = "alpha\ncharlie";
+    assert.equal(expected, squawk('ac'));
+  });
 });
