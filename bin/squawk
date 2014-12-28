@@ -2,4 +2,4 @@
 
 var squawk = require('../index');
 
-console.log(squawk(process.argv[2]));
+console.log(squawk(process.argv[2]).join('\n'));
