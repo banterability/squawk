@@ -1,12 +1,11 @@
 var processNumbers = require('./lib/numbers');
 
-function isDigit(ch){
-  return !!ch.match(/\d/);
-}
 
 function processCharacter(ch){
-  if(isDigit(ch)){
-    return processNumbers(ch);
+  var numberReplacement;
+
+  if(numberReplacement = processNumbers(ch)){
+    return numberReplacement;
   }
   return ch;
 }
