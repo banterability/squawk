@@ -1,3 +1,7 @@
+2.0.0
+-----
+* Direct calls to the library respond with an array, not a newline-delimited string
+
 1.0.1
 -----
 * Documentation fixes
