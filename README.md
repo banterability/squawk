@@ -39,6 +39,6 @@ Usage:
 
 ```javascript
 var squawk = require('squawk');
-console.log(squawk('1a3'));
+squawk('1a3');
 # -> ['one', 'alpha', 'three']
 ```
