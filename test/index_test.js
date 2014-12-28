@@ -7,12 +7,12 @@ describe('squawk', function(){
   });
 
   it('returns each character on its own line', function(){
-    var expected = 'h\ne\nl\nl\no';
-    assert.equal(expected, squawk('hello'));
+    var expected = '-\n-\n-';
+    assert.equal(expected, squawk('---'));
   });
 
   it('replaces numbers with their word form', function(){
-    var expected = "a\ntwo\nc\nfour";
-    assert.equal(expected, squawk('a2c4'));
+    var expected = "two\nfour";
+    assert.equal(expected, squawk('24'));
   });
 });
