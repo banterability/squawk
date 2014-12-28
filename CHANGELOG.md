@@ -1,3 +1,7 @@
+1.0.1
+-----
+* Documentation fixes
+
 1.0.0
 -----
 * Replace letters with NATO phonetic alphabet
