@@ -16,8 +16,15 @@ describe('squawk', function(){
     assert.equal(expected, squawk('24'));
   });
 
-  it('replaces letters with their word form', function(){
-    var expected = "alpha\ncharlie";
-    assert.equal(expected, squawk('ac'));
+  describe('letters', function(){
+    it('replaces letters with their word form', function(){
+      var expected = "alpha\ncharlie";
+      assert.equal(expected, squawk('ac'));
+    });
+
+    it('handles mixed case', function(){
+    var expected = "oscar\nkilo";
+    assert.equal(expected, squawk('Ok'));
+    });
   });
 });
