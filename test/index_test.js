@@ -27,4 +27,9 @@ describe('squawk', function(){
     assert.equal(expected, squawk('Ok'));
     });
   });
+
+  it('handles a mix of letters and numbers', function(){
+    var expected = "mike\nfive\nvictor\ntwo\ntango\nsix";
+    assert.equal(expected, squawk('M5V2T6'));
+  });
 });
