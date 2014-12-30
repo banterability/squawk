@@ -11,8 +11,8 @@ function squawkCli(testString, cb){
 describe('squawk', function(){
   describe('from the command line', function(){
     it('returns each character on its own line', function(done){
-      var expected = '-\n-\n-\n';
-      squawkCli('---', function(err, actual){
+      var expected = '%\n%\n%\n';
+      squawkCli('%%%', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
@@ -59,8 +59,8 @@ describe('squawk', function(){
     });
 
     it('returns each character on its own line', function(){
-      var expected = ['-', '-', '-'];
-      assert.deepEqual(expected, squawk('---'));
+      var expected = ['%', '%', '%'];
+      assert.deepEqual(expected, squawk('%%%'));
     });
 
     it('replaces numbers with their word form', function(){
