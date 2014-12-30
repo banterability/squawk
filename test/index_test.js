@@ -44,9 +44,17 @@ describe('squawk', function(){
       });
     });
 
-    it('handles a mix of letters and numbers', function(done){
-      var expected = 'mike\nfive\nvictor\ntwo\ntango\nsix\n';
-      squawkCli('M5V2T6', function(err, actual){
+    it('handles symbols', function(done){
+      var expected = 'dash\ndash\ndash\n';
+      squawkCli('-–—', function(err, actual){
+        assert.equal(expected, actual);
+        done();
+      });
+    });
+
+    it('handles a mix of all character types', function(done){
+      var expected = 'mike\nfive\nvictor\ndash\ntwo\ntango\nsix\n';
+      squawkCli('M5V-2T6', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
@@ -80,9 +88,14 @@ describe('squawk', function(){
       });
     });
 
-    it('handles a mix of letters and numbers', function(){
-      var expected = ['mike', 'five', 'victor', 'two', 'tango', 'six'];
-      assert.deepEqual(expected, squawk('M5V2T6'));
+    it('handles symbols', function(){
+      var expected = ['dash', 'dash', 'dash'];
+      assert.deepEqual(expected, squawk('-–—'));
+    });
+
+    it('handles a mix of all character types', function(){
+      var expected = ['mike', 'five', 'victor', 'dash', 'two', 'tango', 'six'];
+      assert.deepEqual(expected, squawk('M5V-2T6'));
     });
   });
 });
