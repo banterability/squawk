@@ -18,10 +18,11 @@ $ npm install -g squawk
 Usage:
 
 ```bash
-$ squawk THX1138
+$ squawk THX-1138
 tango
 hotel
 x-ray
+dash
 one
 one
 three
