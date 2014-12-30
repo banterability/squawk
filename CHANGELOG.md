@@ -1,3 +1,7 @@
+3.0.0
+-----
+* Replace symbols with pronouncable forms
+
 2.0.1
 -----
 * Documentation fixes
