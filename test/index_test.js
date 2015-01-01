@@ -1,18 +1,12 @@
 var assert = require('assertive'),
-    childProcess = require('child_process'),
+    callCli = require('./helpers')['callCli'],
     squawk = require('../index');
-
-function squawkCli(testString, cb){
-  childProcess.exec('./bin/squawk ' + testString, function(err, stdout, stderr){
-    cb(err, stdout);
-  });
-}
 
 describe('squawk', function(){
   describe('from the command line', function(){
     it('returns each character on its own line', function(done){
       var expected = '%\n%\n%\n';
-      squawkCli('%%%', function(err, actual){
+      callCli('%%%', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
@@ -20,7 +14,7 @@ describe('squawk', function(){
 
     it('replaces numbers with their word form', function(done){
       var expected = 'two\nfour\n';
-      squawkCli('24', function(err, actual){
+      callCli('24', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
@@ -29,7 +23,7 @@ describe('squawk', function(){
     describe('letters', function(){
       it('replaces letters with their word form', function(done){
         var expected = 'alpha\ncharlie\n';
-        squawkCli('ac', function(err, actual){
+        callCli('ac', function(err, actual){
           assert.equal(expected, actual);
           done();
         });
@@ -37,7 +31,7 @@ describe('squawk', function(){
 
       it('handles mixed case', function(done){
         var expected = 'oscar\nkilo\n';
-        squawkCli('Ok', function(err, actual){
+        callCli('Ok', function(err, actual){
           assert.equal(expected, actual);
           done();
         });
@@ -46,7 +40,7 @@ describe('squawk', function(){
 
     it('handles symbols', function(done){
       var expected = 'dash\ndash\ndash\n';
-      squawkCli('-–—', function(err, actual){
+      callCli('-–—', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
@@ -54,7 +48,7 @@ describe('squawk', function(){
 
     it('handles a mix of all character types', function(done){
       var expected = 'mike\nfive\nvictor\ndash\ntwo\ntango\nsix\n';
-      squawkCli('M5V-2T6', function(err, actual){
+      callCli('M5V-2T6', function(err, actual){
         assert.equal(expected, actual);
         done();
       });
