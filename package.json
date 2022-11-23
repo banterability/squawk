@@ -14,14 +14,16 @@
   "homepage": "https://github.com/banterability/squawk",
   "devDependencies": {
     "assertive": "^1.4.1",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "prettier": "^2.8.0"
   },
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "format": "prettier --write ."
   },
   "bin": {
     "squawk": "./bin/squawk"

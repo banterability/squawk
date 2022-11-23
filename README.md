@@ -1,5 +1,4 @@
-squawk
-======
+# squawk
 
 Read out complex strings in a vaguely understandable way.
 
@@ -40,7 +39,7 @@ $ npm install squawk
 Usage:
 
 ```javascript
-var squawk = require('squawk');
-squawk('a113');
+var squawk = require("squawk");
+squawk("a113");
 // -> ['alpha', 'one', 'one', 'three']
 ```
