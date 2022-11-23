@@ -13,8 +13,7 @@
   },
   "homepage": "https://github.com/banterability/squawk",
   "devDependencies": {
-    "assertive": "^1.4.1",
-    "mocha": "^2.1.0",
+    "jest": "^29.3.1",
     "prettier": "^2.8.0"
   },
   "main": "index.js",
@@ -22,8 +21,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "jest"
   },
   "bin": {
     "squawk": "./bin/squawk"
