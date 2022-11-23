@@ -1,3 +1,9 @@
+## 4.0.0
+
+- Adds replacements for additional symbols
+- Returns non-replaced characters wrapped in brackets
+- Thinner NPM package
+
 ## 3.0.0
 
 - Replace symbols with pronouncable forms
