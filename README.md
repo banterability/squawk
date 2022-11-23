@@ -2,7 +2,8 @@
 
 Read out complex strings in a vaguely understandable way.
 
-[![Build Status](https://travis-ci.org/banterability/squawk.svg?branch=master)](https://travis-ci.org/banterability/squawk)
+[![Latest Version](https://img.shields.io/npm/v/squawk.svg)](https://www.npmjs.com/package/squawk)
+[![Build status](https://img.shields.io/circleci/project/github/banterability/squawk/main.svg)](https://circleci.com/gh/banterability/squawk/tree/main)
 
 ### Usage
 
