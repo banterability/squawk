@@ -20,6 +20,9 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "bin/"
+  ],
   "scripts": {
     "format": "prettier --write .",
     "test": "jest"
